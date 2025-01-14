@@ -129,8 +129,6 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/*Button Conttataci*/
-
 .btn-contatta {
   background-color: #ff4500;
   color: white;
@@ -154,4 +152,85 @@ p {
 .btn-contatta:active {
   transform: translateY(1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .bottoni-principali {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .btn, .btn-scopri, .btn-prenota {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .descrizione-area {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .temi-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .temi-item img {
+    height: 200px;
+  }
+
+  .espositori-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .espositore {
+    padding: 15px;
+  }
+
+  .espositore img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contatta-box {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .btn-contatta {
+    font-size: 1rem;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .espositori-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .espositore {
+    padding: 10px;
+  }
 }
