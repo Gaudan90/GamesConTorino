@@ -89,19 +89,113 @@ main {
   padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .transport-container {
+    padding: 15px;
+    width: 90%;
+  }
+
   #mappaEvento {
     width: 100%;
-    height: 400px;
+    height: 500px;
+    max-width: 700px;
   }
-  
+
   .transport-options {
-    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .transport-info {
+    max-width: 90%;
+    margin: 15px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .transport-container {
+    padding: 10px;
+    width: 95%;
+  }
+
+  .transport-options {
+    gap: 10px;
     justify-content: center;
   }
-  
+
+  .transport-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  #mappaEvento {
+    height: 350px;
+  }
+
   .transport-info {
-    width: 90%;
+    padding: 15px;
+    margin: 10px auto;
+    width: 95%;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+
+  .transport-info-content p,
+  .transport-info-content ol {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .transport-info-content ol {
+    padding-left: 20px;
+  }
+
+  .map-container.shifted {
+    transform: translateY(15px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .transport-container {
+    padding: 8px;
+  }
+
+  .transport-options {
+    gap: 8px;
+  }
+
+  .transport-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  #mappaEvento {
+    height: 300px;
+  }
+
+  .transport-info {
+    padding: 12px;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  .transport-info-content p,
+  .transport-info-content ol {
+    font-size: 0.85em;
+  }
+}
+
+@media (hover: none) {
+  .transport-icon:hover {
+    transform: none;
+  }
+
+  .transport-icon:active {
+    transform: scale(0.95);
   }
 }
 
