@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>GamesCon - Conferenze</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/theme_style.css" />
+    <link rel="stylesheet" href="../styles/navbar_style.css" />
+    <link rel="stylesheet" href="../styles/bottombar_styles.css" />
+    <link rel="stylesheet" href="../styles/conference_styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eater&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/icon_gamescon.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="#">Home</a>
+            <div class="dropdown-content">
+              <a href="home.html">Home</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#info">Info</a>
+            <div class="dropdown-content">
+              <a href="comeArrivare.html">Come arrivare</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#aree">Aree</a>
+            <div class="dropdown-content">
+              <a href="games.html">Games</a>
+              <a href="cosplay.html">Cosplay</a>
+              <a href="conference.html">Conference</a>
+              <a href="areacommerciale.html">Area Commerciale</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#attivita">Attività</a>
+            <div class="dropdown-content">
+              <a href="./formazione_dev.html">Formazione Developers</a>
+              <a href="videogames.html">Videogames & Tabletop</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#social">Contatti</a>
+            <div class="dropdown-content">
+              <a href="contatti.html">Contatti</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="conference-schedule">
+        <div class="schedule-container">
+          <div class="schedule-day">
+            <h2>30 OTTOBRE</h2>
+            <div class="conference-card">
+              <div class="time">11:30 - 12:30</div>
+              <h3>Il Futuro del Game Development</h3>
+              <p>
+                IGDA presenta le nuove frontiere dello sviluppo
+                videoludico e le opportunità per gli sviluppatori emergenti
+              </p>
+              <div class="speaker">Suzanne Freyjadis - IGDA Director of Global Development</div>
+            </div>
+            <div class="conference-card">
+              <div class="time">14:00 - 15:00</div>
+              <h3>Unity vs Unreal: Scegli il Tuo Destino</h3>
+              <p>
+                Confronto tra i due engine più popolari per lo sviluppo di
+                videogiochi, con l'esperienza del Team di Dramatic Iceberg
+                e le loro opinioni. 
+              </p>
+              <div class="speaker">Gabriele Gallo - Dramatic Iceberg Producer, 
+                Leonardo Assom, Emma Nosengo & Luca Pavesi - Dramatic Iceberg 3D Art</div>
+            </div>
+          </div>
+
+          <div class="schedule-day">
+            <h2>31 OTTOBRE</h2>
+            <div class="conference-card">
+              <div class="time">11:00 - 12:00</div>
+              <h3>Indie Games: Storie di Sviluppo</h3>
+              <p>Dal garage al successo: storie di sviluppatori indipendenti, dal PC
+                alla Realtà Aumentata, dalla Realtà Aumentata alla Realtà Virtuale.
+              </p>
+              <div class="speaker">Level Up Lab - Studio Sviluppatori Politecnico</div>
+            </div>
+            <div class="conference-card">
+              <div class="time">16:30 - 17:30</div>
+              <h3>Carriera nel Game Development</h3>
+              <p>Opportunità e percorsi nel mondo dello sviluppo videoludico</p>
+              <div class="speaker">Marta Daglow - Daglow Consulting Group</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="registration-area">
+        <div class="registration-form">
+          <h2>Prenota il tuo posto alle conferenze</h2>
+          <form id="conference-form">
+            <input type="text" placeholder="Nome e Cognome" required />
+            <input type="email" placeholder="Email" required />
+            <select required>
+              <option value="">Seleziona la conferenza</option>
+              <option>Il Futuro del Game Development</option>
+              <option>Unity vs Unreal: Scegli il Tuo Destino</option>
+              <option>Indie Games: Storie di Sviluppo</option>
+              <option>Carriera nel Game Development</option>
+            </select>
+            <button type="submit" class="submit-btn">PRENOTA ORA</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <li class="dropdown">
+        <div>
+          <a href="#facebook" target="_blank"
+            ><img class="social" src="../assets/icon_facebook.svg"
+          /></a>
+          <a
+            href="https://www.instagram.com/gamescontorino?igsh=dWdqOWtkMjJscTE5&utm_source=qr"
+            target="_blank"
+            ><img class="social" src="../assets/icon_instagram.svg"
+          /></a>
+          <a
+            href="https://www.tiktok.com/@gamescon.torino?_t=8rxtLYAN9Ms&_r=1"
+            target="_blank"
+            ><img class="social" src="../assets/icon_tiktok.svg" />
+          </a>
+        </div>
+      </li>
+    </footer>
+    <script src="../scripts/conference_script.js"></script>
+    <script src="../scripts/navbar_scripts.js"></script>
+  </body>
+</html>
