@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 header {
@@ -11,11 +12,13 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   background-color: #000;
 }
+
 nav {
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -26,9 +29,11 @@ nav ul {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   flex-wrap: wrap;
   gap: 1rem;
+  position: relative;
+  z-index: 1001;
 }
 
 main {
@@ -98,7 +103,7 @@ nav ul li a {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 1002;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -107,6 +112,8 @@ nav ul li a {
   transition: opacity 0.3s ease;
   padding: 10px;
   min-width: max-content;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
 }
 
 .dropdown input[type="checkbox"]:checked ~ .dropdown-content {
@@ -177,7 +184,13 @@ nav ul li a {
   .dropdown label::before {
     display: inline-block;
   }
-
+  
+  .container {
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+}  
+  
 #dropdown-1 + label::before {
   background-image: url("../assets/home-icon.png");  
 }
@@ -202,9 +215,10 @@ nav ul li a {
   .dropdown-content {
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
+    left: 0;
+    transform: none;
+    min-width: 160px;
+    width: auto;
     background-color: rgba(0, 0, 0, 0.95);
     border-radius: 8px;
     padding: 0.5rem;
