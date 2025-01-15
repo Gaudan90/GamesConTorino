@@ -5,6 +5,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -226,6 +228,59 @@ p {
   }
 }
 
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  .temi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .temi-item img {
+    height: 150px;
+  }
+
+  .espositori-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .bottoni-principali {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .btn, .btn-scopri, .btn-prenota {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+
+  .descrizione-area {
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+
+  .contatta-box {
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .btn-contatta {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 1.5rem;
@@ -243,5 +298,19 @@ p {
 
   .espositore {
     padding: 8px;
+  }
+}
+
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .temi-item img {
+    height: 120px;
+  }
+
+  .espositori-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  h1 {
+    font-size: 1.2rem;
   }
 }
