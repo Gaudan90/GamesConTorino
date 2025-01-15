@@ -34,6 +34,22 @@
   overflow: hidden;
 }
 
+#palazzina {
+  font-family: "Unkempt", cursive;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 3.2rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(249, 36, 36) 0%,
+    rgb(255, 0, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 #carousel {
   position: relative;
   width: 100%;
