@@ -10,11 +10,12 @@ main {
 }
 
 footer {
+  flex-shrink: 0;
   width: 100%;
   background-color: #000000;
   position: sticky;
   bottom: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 footer .dropdown {
