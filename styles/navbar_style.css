@@ -13,9 +13,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #000
+  background-color: #000;
   left: 0;
   right: 0;
+  margin-left: calc(-50vw + 50%); 
+  margin-right: calc(-50vw + 50%);
 }
 
 nav {
@@ -274,6 +276,14 @@ nav ul li a {
 }
 
 @media screen and (orientation: landscape) and (max-height: 768px) {
+  header {
+    width: 100vw;
+    left: 0;
+    right: 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+  
   .dropdown label span {
     display: none;
   }
