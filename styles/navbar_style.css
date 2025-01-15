@@ -1,20 +1,15 @@
-html, body {
-  width: 100%;
-  height: 100%;
+body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-}
-
-body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 header {
   flex: none;
-  width: 100%;
+  width: 100vw;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -88,15 +83,6 @@ nav ul li a {
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 60px auto 0; 
-  padding: 20px;
-  box-sizing: border-box;
-  flex: 1 0 auto;
 }
 
 .dropdown input[type="checkbox"] {
@@ -202,13 +188,13 @@ nav ul li a {
   .dropdown label::before {
     display: inline-block;
   }
-  
+
   .container {
   position: relative;
   z-index: 1;
   padding-top: 20px;
 }  
-  
+
 #dropdown-1 + label::before {
   background-image: url("../assets/home-icon.png");  
 }
@@ -301,11 +287,11 @@ nav ul li a {
   .dropdown label span {
     display: none;
   }
-  
+
   .dropdown label::before {
     display: inline-block;
   }
-  
+
   #dropdown-1 + label::before {
   background-image: url("../assets/home-icon.png");  
   }
@@ -324,74 +310,6 @@ nav ul li a {
 
 #dropdown-contatti + label::before {
   background-image: url("../assets/contacts-icon.png");  
-  }
-}
-
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  header {
-    position: sticky;
-    top: 0;
-    width: 100vw; 
-    max-width: 100%; 
-  }
-
-  nav {
-    width: 100%;
-    max-width: 100vw;
-  }
-
-  nav ul {
-    width: 100%;
-    padding: 5px;
-    gap: 0.5rem;
-    justify-content: space-around; 
-  }
-
-  .dropdown {
-    padding: 2px;
-  }
-
-  .dropdown label::before {
-    font-size: 16px;
-    padding: 4px;
-    display: block; 
-  }
-
-  .dropdown-content {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-    min-width: 120px;
-    padding: 5px;
-  }
-
-  .dropdown-content a {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-    white-space: nowrap;
-  }
-}
-
-@media screen and (max-height: 450px) and (orientation: landscape) {
-  nav ul {
-    padding: 2px;
-    gap: 0.25rem;
-  }
-
-  .dropdown label::before {
-    font-size: 14px;
-    padding: 3px;
-  }
-
-  .dropdown-content {
-    min-width: 100px;
-  }
-
-  .dropdown-content a {
-    padding: 6px 10px;
-    font-size: 0.8rem;
   }
 }
 
@@ -419,6 +337,4 @@ nav ul li a {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
 }
