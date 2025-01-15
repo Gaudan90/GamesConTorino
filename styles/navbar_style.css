@@ -9,7 +9,7 @@ body {
 header {
   flex: none;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
   background-color: #000;
@@ -133,13 +133,7 @@ nav ul li a {
 }
 
 .dropdown label::before {
-  content: "";
   display: none;
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .dropdown label span {
@@ -172,23 +166,23 @@ nav ul li a {
   }
 
 #dropdown-1 + label::before {
-  background-image: url("../assets/home-icon.svg");  
+  background-image: url("../assets/home-icon.png");  
 }
 
 #dropdown-2 + label::before {
-  background-image: url("../assets/info-icon.svg");  
+  background-image: url("../assets/info-icon.png");  
 }
 
 #dropdown-aree + label::before {
-  background-image: url("../assets/areas-icon.svg");  
+  background-image: url("../assets/areas-icon.png");  
 }
 
 #dropdown-attivita + label::before {
-  background-image: url("../assets/activities-icon.svg"); 
+  background-image: url("../assets/activities-icon.png"); 
 }
 
 #dropdown-contatti + label::before {
-  background-image: url("../assets/contacts-icon.svg");  
+  background-image: url("../assets/contacts-icon.png");  
 }
 
 
@@ -255,23 +249,23 @@ nav ul li a {
     display: none;
   }
   #dropdown-1 + label::before {
-  background-image: url("../assets/home-icon.svg");  
+  background-image: url("../assets/home-icon.png");  
   }
 
 #dropdown-2 + label::before {
-  background-image: url("../assets/info-icon.svg");  
+  background-image: url("../assets/info-icon.png");  
   }
 
 #dropdown-aree + label::before {
-  background-image: url("../assets/areas-icon.svg");  
+  background-image: url("../assets/areas-icon.png");  
   }
 
 #dropdown-attivita + label::before {
-  background-image: url("../assets/activities-icon.svg"); 
+  background-image: url("../assets/activities-icon.png"); 
   }
 
 #dropdown-contatti + label::before {
-  background-image: url("../assets/contacts-icon.svg");  
+  background-image: url("../assets/contacts-icon.png");  
   }
 }
 
