@@ -109,6 +109,16 @@ nav ul li a {
   animation: fadeIn 0.2s ease-in-out;
 }
 
+.dropdown label::before {
+  content: "";
+  display: none;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .dropdown label:hover,
 .dropdown input[type="checkbox"]:checked ~ label {
   color: rgb(255, 0, 0);
@@ -160,9 +170,6 @@ nav ul li a {
 
   .dropdown label::before {
     display: inline-block;
-    font-size: 20px;
-    font-family: monospace;
-    padding: 6px;
   }
 
 #dropdown-1 + label::before {
@@ -248,6 +255,11 @@ nav ul li a {
   .dropdown label span {
     display: none;
   }
+  
+  .dropdown label::before {
+    display: inline-block;
+  }
+  
   #dropdown-1 + label::before {
   background-image: url("../assets/home-icon.png");  
   }
