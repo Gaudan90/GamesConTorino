@@ -9,10 +9,15 @@ body {
 header {
   flex: none;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   background-color: #000;
+}
+
+.container {
+  margin-top: 60px;
+  margin-bottom: 70px;
 }
 
 nav ul {
@@ -133,7 +138,13 @@ nav ul li a {
 }
 
 .dropdown label::before {
-  display: none; 
+  content: "";
+  display: none;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .dropdown label span {
@@ -165,11 +176,26 @@ nav ul li a {
     padding: 6px;
   }
 
-  #dropdown-1 + label::before { content: "⌂"; }
-  #dropdown-2 + label::before { content: "ℹ"; }
-  #dropdown-aree + label::before { content: "☰"; }
-  #dropdown-attivita + label::before { content: "★"; }
-  #dropdown-contatti + label::before { content: "✉"; }
+#dropdown-1 + label::before {
+  background-image: url("../assets/home-icon.svg");  
+}
+
+#dropdown-2 + label::before {
+  background-image: url("../assets/info-icon.svg");  
+}
+
+#dropdown-aree + label::before {
+  background-image: url("../assets/areas-icon.svg");  
+}
+
+#dropdown-attivita + label::before {
+  background-image: url("../assets/activities-icon.svg"); 
+}
+
+#dropdown-contatti + label::before {
+  background-image: url("../assets/contacts-icon.svg");  
+}
+
 
   .dropdown-content {
     position: absolute;
@@ -226,6 +252,31 @@ nav ul li a {
 
   .dropdown-content {
     min-width: 120px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 768px) {
+  .dropdown label span {
+    display: none;
+  }
+  #dropdown-1 + label::before {
+  background-image: url("../assets/home-icon.svg");  
+  }
+
+#dropdown-2 + label::before {
+  background-image: url("../assets/info-icon.svg");  
+  }
+
+#dropdown-aree + label::before {
+  background-image: url("../assets/areas-icon.svg");  
+  }
+
+#dropdown-attivita + label::before {
+  background-image: url("../assets/activities-icon.svg"); 
+  }
+
+#dropdown-contatti + label::before {
+  background-image: url("../assets/contacts-icon.svg");  
   }
 }
 
