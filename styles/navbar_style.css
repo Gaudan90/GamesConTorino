@@ -15,11 +15,6 @@ header {
   background-color: #000;
 }
 
-.container {
-  margin-top: 20px;
-  margin-bottom: 70px;
-}
-
 nav ul {
   list-style-type: none;
   display: flex;
