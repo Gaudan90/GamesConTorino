@@ -143,7 +143,7 @@ nav ul li a {
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
     background-color: #000;
@@ -151,6 +151,7 @@ nav ul li a {
 
   .dropdown {
     width: auto;
+    padding: 4px;
   }
 
   .dropdown label span {
@@ -159,9 +160,9 @@ nav ul li a {
 
   .dropdown label::before {
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     font-family: monospace;
-    padding: 8px;
+    padding: 6px;
   }
 
   #dropdown-1 + label::before { content: "⌂"; }
@@ -188,6 +189,43 @@ nav ul li a {
     border-radius: 4px;
     margin: 4px 0;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    padding: 0.25rem;
+  }
+
+  .dropdown {
+    padding: 2px;
+  }
+
+  .dropdown label::before {
+    font-size: 18px;
+    padding: 4px;
+  }
+
+  .dropdown-content {
+    left: 0;
+    transform: none;
+    width: auto;
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  .dropdown label::before {
+    font-size: 16px;
+    padding: 3px;
+  }
+
+  .dropdown-content {
+    min-width: 120px;
   }
 }
 
