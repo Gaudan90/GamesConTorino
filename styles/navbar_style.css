@@ -1,3 +1,9 @@
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -313,6 +319,74 @@ nav ul li a {
   }
 }
 
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  header {
+    position: sticky;
+    top: 0;
+    width: 100vw; 
+    max-width: 100%; 
+  }
+
+  nav {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  nav ul {
+    width: 100%;
+    padding: 5px;
+    gap: 0.5rem;
+    justify-content: space-around; 
+  }
+
+  .dropdown {
+    padding: 2px;
+  }
+
+  .dropdown label::before {
+    font-size: 16px;
+    padding: 4px;
+    display: block; 
+  }
+
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 120px;
+    padding: 5px;
+  }
+
+  .dropdown-content a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  nav ul {
+    padding: 2px;
+    gap: 0.25rem;
+  }
+
+  .dropdown label::before {
+    font-size: 14px;
+    padding: 3px;
+  }
+
+  .dropdown-content {
+    min-width: 100px;
+  }
+
+  .dropdown-content a {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
 @media (hover: hover) {
   nav ul li:hover > a,
   nav ul li a:hover {
@@ -337,4 +411,6 @@ nav ul li a {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
