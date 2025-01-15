@@ -19,6 +19,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .transport-options {
@@ -78,9 +79,11 @@ h3 {
 
 #mappaEvento {
   display: block;
-  height: 600px;
-  width: 550px;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
   border-radius: 8px;
+  object-fit: contain;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -113,28 +116,39 @@ main {
 
 @media screen and (max-width: 768px) {
   .transport-container {
-    padding: 10px;
+    padding: 8px;
     width: 95%;
   }
 
   .transport-options {
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
   }
 
   .transport-icon {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
   }
 
   #mappaEvento {
-    height: 350px;
+    height: auto;
+    max-height: 400px;
+  }
+}
+
+  .transport-options {
+    gap: 12px;
   }
 
   .transport-info {
-    padding: 15px;
-    margin: 10px auto;
-    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .transport-icon {
+    width: 40px;
+    height: 40px;
   }
 
   h3 {
@@ -155,11 +169,10 @@ main {
   .map-container.shifted {
     transform: translateY(15px);
   }
-}
 
 @media screen and (max-width: 480px) {
   .transport-container {
-    padding: 8px;
+    padding: 5px;
   }
 
   .transport-options {
@@ -167,20 +180,21 @@ main {
   }
 
   .transport-icon {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 
   #mappaEvento {
-    height: 300px;
+    max-height: 300px;
   }
 
   .transport-info {
-    padding: 12px;
+    padding: 10px;
+    font-size: 0.85rem;
   }
 
   h3 {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 
   .transport-info-content p,

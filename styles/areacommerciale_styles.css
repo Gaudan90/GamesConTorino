@@ -159,11 +159,12 @@ p {
 @media screen and (max-width: 768px) {
   .container {
     padding: 10px;
+    width: 100%;
   }
 
   h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
   }
 
   .bottoni-principali {
@@ -173,35 +174,38 @@ p {
   }
 
   .btn, .btn-scopri, .btn-prenota {
-    width: 100%;
+    width: 90%;
     max-width: 300px;
     text-align: center;
-    font-size: 1rem;
-    padding: 12px 20px;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .descrizione-area {
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
   }
 
   .temi-grid {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 10px;
   }
 
   .temi-item img {
-    height: 200px;
+    height: 180px;
   }
 
   .espositori-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 10px;
     margin-top: 20px;
   }
 
   .espositore {
-    padding: 15px;
+    padding: 10px;
   }
 
   .espositore img {
@@ -215,24 +219,29 @@ p {
   }
 
   .btn-contatta {
-    font-size: 1rem;
-    padding: 12px 20px;
-    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    width: 90%;
     max-width: 250px;
   }
 }
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .descrizione-area {
+    font-size: 0.85rem;
+    padding: 12px;
   }
 
   .espositori-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 
   .espositore {
-    padding: 10px;
+    padding: 8px;
   }
 }
