@@ -57,6 +57,7 @@ p {
   text-decoration: none;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -254,11 +255,11 @@ p {
   }
 
   .btn, .btn-scopri, .btn-prenota {
-    width: 90%;
+    width: 100%;
     max-width: 300px;
     text-align: center;
-    font-size: 0.9rem;
-    padding: 10px 15px;
+    font-size: 1rem;
+    padding: 12px 20px;
     flex-direction: column;
     gap: 10px;
   }
@@ -316,6 +317,15 @@ p {
     padding: 12px;
   }
 
+  .bottoni-principali {
+    gap: 12px;
+  }
+
+  .btn, .btn-scopri, .btn-prenota {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
   #espositori.espositori-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px;
@@ -327,6 +337,20 @@ p {
 }
 
 @media screen and (max-height: 450px) and (orientation: landscape) {
+
+  .bottoni-principali {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn, .btn-scopri, .btn-prenota {
+    width: 100%;
+    max-width: 250px;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
   .temi-item img {
     height: 120px;
   }
