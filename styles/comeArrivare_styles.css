@@ -12,6 +12,10 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   color: rgb(230, 230, 230);
 }
 
@@ -93,6 +97,7 @@ h3 {
 main {
   font-family: "Unkempt", cursive;
   padding: 20px;
+  flex: 1;
 }
 
 @media screen and (max-width: 1024px) {
