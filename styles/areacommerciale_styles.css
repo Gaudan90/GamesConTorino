@@ -44,9 +44,11 @@ p {
 
 .bottoni-principali {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .btn {
@@ -322,8 +324,8 @@ p {
   }
 
   .btn, .btn-scopri, .btn-prenota {
-    font-size: 0.9rem;
-    padding: 10px 15px;
+    font-size: 1rem;
+    padding: 12px 20px;
   }
 
   #espositori.espositori-grid {
