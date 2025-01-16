@@ -22,16 +22,3 @@ body::before {
   z-index: -2;
   animation: mistyHalloweenBackground 10s infinite alternate ease-in-out 0.3s;
 }
-
-@media screen and (orientation: landscape) and (max-height: 900px) {
-    body {
-        transform: rotate(-90deg);
-        transform-origin: left top;
-        width: 100vh;
-        height: 100vw;
-        overflow-x: hidden;
-        position: absolute;
-        top: 100%;
-        left: 0;
-    }
-}
