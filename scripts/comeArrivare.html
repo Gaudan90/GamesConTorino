@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Come Arrivare</title>
+    <meta name="description" content="Come Arrivare" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/theme_style.css" />
+    <link rel="stylesheet" href="../styles/navbar_style.css" />
+    <link rel="stylesheet" href="../styles/bottombar_styles.css" />
+    <link rel="stylesheet" href="../styles/comeArrivare_styles.css" />
+    <link rel="icon" href="../assets/icon_gamescon.png" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                  <input type="checkbox" id="dropdown-1" />
+                  <label for="dropdown-1"><span>Overview</span></label>
+                  <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <input type="checkbox" id="dropdown-2" />
+                  <label for="dropdown-2"><span>Info</span></label>
+                  <div class="dropdown-content">
+                    <a href="comeArrivare.html">Come arrivare</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                    <input type="checkbox" id="dropdown-aree" />
+                    <label for="dropdown-aree"><span>Aree</span></label>
+                    <div class="dropdown-content">
+                      <a href="games.html">Games</a>
+                      <a href="cosplay.html">Cosplay</a>
+                      <a href="conference.html">Conference</a>
+                      <a href="areacommerciale.html">Area Commerciale</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <input type="checkbox" id="dropdown-attivita" />
+                    <label for="dropdown-attivita"><span>Attività</span></label>
+                    <div class="dropdown-content">
+                      <a href="./formazione_dev.html">Formazione Developers</a>
+                      <a href="videogames.html">Videogames & Tabletop</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <input type="checkbox" id="dropdown-contatti" />
+                    <label for="dropdown-contatti"><span>Contatti</span></label>
+                    <div class="dropdown-content">
+                      <a href="contatti.html">Contatti</a>
+                    </div>
+                  </li>
+              </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="main-wrapper">
+        <div class="transport-container">
+            <div class="transport-options">
+                <img id="busIcon" src="../assets/icon_bus.png" alt="Trasporto con autobus" class="transport-icon">
+                <img id="carIcon" src="../assets/icon_car.png" alt="Trasporto con auto" class="transport-icon">
+            </div>
+            <div id="transportInfo" class="transport-info"></div>
+            <div class="map-container">
+                <img id="mappaEvento" src="../assets/cartina_stupinigi_completa.png" alt="cartina_gamescon">
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <li class="dropdown">
+            <div>
+                <a href="#facebook" target="_blank"><img class="social" src="../assets/icon_facebook.svg"/></a>
+                <a href="https://www.instagram.com/gamescontorino?igsh=dWdqOWtkMjJscTE5&utm_source=qr" target="_blank">
+                    <img class="social" src="../assets/icon_instagram.svg"/>
+                </a>
+                <a href="https://www.tiktok.com/@gamescon.torino?_t=8rxtLYAN9Ms&_r=1" target="_blank">
+                    <img class="social" src="../assets/icon_tiktok.svg"/>
+                </a>
+            </div>
+        </li>
+    </footer>
+    <script src="../scripts/comeArrivare_script.js"></script>
+    <script src="../scripts/navbar_scripts.js"></script>
+</body>
+</html>

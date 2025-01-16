@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>GamesCon Event</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/theme_style.css" />
+    <link rel="stylesheet" href="../styles/navbar_style.css" />
+    <link rel="stylesheet" href="../styles/bottombar_styles.css" />
+    <link rel="stylesheet" href="../styles/home_styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/icon_gamescon.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li class="dropdown">
+              <input type="checkbox" id="dropdown-2" />
+              <label for="dropdown-2"><span>Info</span></label>
+              <div class="dropdown-content">
+                <a href="comeArrivare.html">Come arrivare</a>
+              </div>
+            </li>
+            <li class="dropdown">
+                <input type="checkbox" id="dropdown-aree" />
+                <label for="dropdown-aree"><span>Aree</span></label>
+                <div class="dropdown-content">
+                  <a href="games.html">Games</a>
+                  <a href="cosplay.html">Cosplay</a>
+                  <a href="conference.html">Conference</a>
+                  <a href="areacommerciale.html">Area Commerciale</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" id="dropdown-attivita" />
+                <label for="dropdown-attivita"><span>Attività</span></label>
+                <div class="dropdown-content">
+                  <a href="./formazione_dev.html">Formazione Developers</a>
+                  <a href="videogames.html">Videogames & Tabletop</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" id="dropdown-contatti" />
+                <label for="dropdown-contatti"><span>Contatti</span></label>
+                <div class="dropdown-content">
+                  <a href="contatti.html">Contatti</a>
+                </div>
+              </li>
+          </ul>
+    </nav>
+    </header>
+
+    <main>
+      <section id="header-image">
+        <div class="header-image-container">
+          <p id="logo">GAMESC🎃N</p>
+        </div>
+      </section>
+
+      <section id="carousel">
+        <div class="carousel-container">
+          <div class="carousel-images"></div>
+        </div>
+      </section>
+
+      <h1>STATUS BIGLIETTI</h1>
+      <section id="ticket-counter">
+        <div class="dates-container">
+          <div class="date-circle">
+            <span class="date">30.10</span>
+            <div class="tickets-percentage">50%</div>
+            <button class="acquista-btn">ACQUISTA ORA</button>
+          </div>
+          <div class="date-circle">
+            <span class="date">31.10</span>
+            <div class="tickets-percentage">75%</div>
+            <button class="acquista-btn">ACQUISTA ORA</button>
+          </div>
+        </div>
+      </section>
+
+      <h1>DOVE SIAMO</h1>
+      <div id="palazzina"><h2>Palazzina di Caccia di Stupinigi</h2></div>
+      <section id="mappa-evento">
+        <div class="image-container">
+          <img
+            id="event_map"
+            src="../assets/cartina_stupinigi_completa.png"
+            alt="Mappa evento"
+          />
+        </div>
+      </section>
+
+      <h1>PARTECIPA</h1>
+
+      <section class="registration-container">
+        <div id="registration-form">
+          <h2>Prenota ora il biglietto... per il tuo fato!</h2>
+          <hr />
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Nome" name="nome" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Cognome"
+                name="cognome"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" name="email" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                placeholder="Telefono"
+                name="telefono"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <select id="attivita-select" name="attivita" required>
+                <option value="">Seleziona l'attività preferita</option>
+                <option>Esplorare Realtà Aumentata e Virtuale</option>
+                <option>Giochi da Tavolo e D&D</option>
+                <option>Formazione: Diventa un Videogame Developer</option>
+                <option>Come diventare Content Creator</option>
+                <option>Incontrare gli Streamers</option>
+                <option>Ascoltare le Conferenze</option>
+                <option>Partecipare alla Gara Cosplay</option>
+              </select>
+            </div>
+            <button type="submit" class="submit-btn">Invia Richiesta</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <li class="dropdown">
+        <div>
+          <a href="#facebook" target="_blank"
+            ><img class="social" src="../assets/icon_facebook.svg"
+          /></a>
+          <a
+            href="https://www.instagram.com/gamescontorino?igsh=dWdqOWtkMjJscTE5&utm_source=qr"
+            target="_blank"
+            ><img class="social" src="../assets/icon_instagram.svg"
+          /></a>
+          <a
+            href="https://www.tiktok.com/@gamescon.torino?_t=8rxtLYAN9Ms&_r=1"
+            target="_blank"
+            ><img class="social" src="../assets/icon_tiktok.svg" />
+          </a>
+        </div>
+      </li>
+    </footer>
+    <script src="../scripts/home_script.js"></script>
+    <script src="../scripts/navbar_scripts.js"></script>
+  </body>
+</html>
