@@ -96,6 +96,12 @@ nav ul li a {
   min-width: max-content;
   max-height: calc(100vh - 60px);
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.dropdown-content::-webkit-scrollbar {
+  display: none;
 }
 
 .dropdown input[type="checkbox"]:checked ~ .dropdown-content {
